@@ -729,7 +729,12 @@
               <p class="lead">
                 Fill out the form to learn more about our services.
               </p>
-              <form method="POST" action="contact_lp_mailer.php">
+              <form
+                method="POST"
+                action="contact_lp_mailer.php"
+                onsubmit="return validateForm() "
+                id="contactForm"
+              >
                 <div class="form-group">
                   <input
                     type="text"
@@ -746,6 +751,7 @@
                     name="email"
                   />
                 </div>
+
                 <button
                   type="submit"
                   class="btn btn-lg col-lg-6 col-11 btn-contact my-md-5"
@@ -826,6 +832,29 @@
         </div>
       </nav>
     </footer>
+    <script>
+      function validateForm() {
+        var fullname = document.forms["contactForm"]["fullname"].value;
+        var email = document.forms["contactForm"]["email"].value;
+
+        // Validate if the fields are empty
+        if (fullname === "" || email === "") {
+          alert("Please fill out all the fields.");
+          return false;
+        }
+
+        // Validate the email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Please enter a valid email address.");
+          return false;
+        }
+
+        // If everything is correct, the form will be submitted
+        alert("Form submitted successfully!");
+        return true;
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

@@ -78,5 +78,5 @@ if (filter_var($usr_email, FILTER_VALIDATE_EMAIL)) {
 
     exit();
 } else {
-    echo "<div  ><p class='txt_msg-error' >Email address is invalid</p></div>";
+    echo "La dirección de correo no es válida.";
 }
