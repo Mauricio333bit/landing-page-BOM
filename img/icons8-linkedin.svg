@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 192 192"
+   width="48"
+   height="48"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="icons8-linkedin.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="8.609375"
+     inkscape:cx="19.571688"
+     inkscape:cy="24.043557"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <g
+     fill="#339af0"
+     fill-rule="nonzero"
+     stroke="none"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     stroke-miterlimit="10"
+     stroke-dasharray="none"
+     stroke-dashoffset="0"
+     font-family="none"
+     font-weight="none"
+     font-size="none"
+     text-anchor="none"
+     style="mix-blend-mode:normal"
+     id="g6"
+     transform="translate(-32,-32)">
+    <g
+       transform="scale(4)"
+       id="g4">
+      <path
+         d="M 48,8 H 16 c -4.418,0 -8,3.582 -8,8 v 32 c 0,4.418 3.582,8 8,8 h 32 c 4.418,0 8,-3.582 8,-8 V 16 C 56,11.582 52.418,8 48,8 Z M 24,47 H 19 V 27 h 5 z M 24.029,23.009 C 23.382,23.669 22.538,24 21.5,24 20.474,24 19.635,23.659 18.981,22.977 18.327,22.295 18,21.458 18,20.468 18,19.448 18.327,18.616 18.981,17.97 19.635,17.323 20.474,17 21.5,17 c 1.038,0 1.882,0.323 2.529,0.969 0.647,0.646 0.971,1.479 0.971,2.499 0,1.034 -0.324,1.881 -0.971,2.541 z M 47,47 H 42 V 35.887 C 42,32.788 40.214,31 38,31 36.933,31 35.726,31.648 35.035,32.469 34.344,33.29 34,34.331 34,35.594 V 47 H 29 V 27 h 5 v 3.164 h 0.078 C 35.55,27.729 37.691,26.52 40.504,26.512 44.5,26.5 47,29.5 47,34.754 Z"
+         id="path2" />
+    </g>
+  </g>
+</svg>

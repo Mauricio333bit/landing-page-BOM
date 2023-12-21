@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 43.124802 49.105801"
+   class="css-12xw6g8"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="openbootcamp.svg"
+   width="43.124802"
+   height="49.105801"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     showguides="true"
+     inkscape:zoom="7.6395262"
+     inkscape:cx="24.412509"
+     inkscape:cy="24.216161"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <ellipse
+     cx="16.6122"
+     cy="16.585199"
+     rx="16.6122"
+     ry="16.585199"
+     fill="#0bf082"
+     id="ellipse2" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M 34.4269,16.5859 H 16.6113 v 17.3944 h 8e-4 v 15.1255 h 17.8155 c 4.8033,0 8.6972,-3.8939 8.6972,-8.6972 0,-3.2402 -1.772,-6.0666 -4.3997,-7.563 2.6273,-1.4964 4.3989,-4.3226 4.3989,-7.5625 0,-4.8033 -3.8938,-8.6972 -8.6971,-8.6972 z"
+     fill="#047af3"
+     id="path4" />
+</svg>

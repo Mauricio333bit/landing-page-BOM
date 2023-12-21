@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 187.73325 187.73325"
+   width="21.99999"
+   height="21.99999"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="icons8-facebook.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="18.366667"
+     inkscape:cx="8.9564428"
+     inkscape:cy="11.052632"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <g
+     fill="#339af0"
+     fill-rule="nonzero"
+     stroke="none"
+     stroke-width="1"
+     stroke-linecap="butt"
+     stroke-linejoin="miter"
+     stroke-miterlimit="10"
+     stroke-dasharray="none"
+     stroke-dashoffset="0"
+     font-family="none"
+     font-weight="none"
+     font-size="none"
+     text-anchor="none"
+     style="mix-blend-mode:normal"
+     id="g6"
+     transform="translate(-34.13332,-34.13332)">
+    <g
+       transform="scale(8.53333)"
+       id="g4">
+      <path
+         d="M 24,4 H 6 C 4.895,4 4,4.895 4,6 v 18 c 0,1.105 0.895,2 2,2 h 10 v -9 h -3 v -3 h 3 V 12.389 C 16,9.339 17.486,8 20.021,8 c 1.214,0 1.856,0.09 2.16,0.131 V 11 H 20.452 C 19.376,11 19,11.568 19,12.718 V 14 h 3.154 l -0.428,3 H 19 v 9 h 5 c 1.105,0 2,-0.895 2,-2 V 6 C 26,4.895 25.104,4 24,4 Z"
+         id="path2" />
+    </g>
+  </g>
+</svg>
