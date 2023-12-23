@@ -40,7 +40,7 @@ function createMail($sender, $message)
     return $mail;
 }
 
-function makeMessageUser(string $nameUsr)
+/*function makeMessageUser(string $nameUsr)
 {
     $message = "This user $nameUsr was contact us
 
@@ -54,7 +54,26 @@ function makeMessageUser(string $nameUsr)
   Juan Cruz Rios
   Business On Move";
     return $message;
+}*/
+
+
+
+function makeMessageUser(string $nameUsr)
+{
+    $message = `<div style="width:500px; min-height:400px; margin:0 auto; background-color:#112724; color:white; font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif; padding:40px">
+    <img height="32" src="https://cdn.discordapp.com/attachments/695395214264762433/882325678685556756/g.png" alt="GeoBox">
+        <div style="text-align:center; margin-top: 20px;">
+        <div style="font-weight:bold; font-size:24px; margin-bottom: 10px; margin-top: 50px;">`+ + "Hola " +  + `</div>
+            <div style="font-size:20px;">Hay nuevos cambios en el Campo: `+ + `</div>
+            <div style="font-size:20px;">`+ + `</div>
+            <button style="background-color: #2a9d8f; color: #f2f2f2; padding: 10px 50px; border: none; font-weight: bold; font-size: 20px; text-decoration: none; font-weight: bold; border-radius: 5px; cursor: pointer; word-break: break-word; margin-top: 60px;">
+                Ver en GeoBox
+            </button>
+        </div>
+    </div>`;
+    return $message;
 }
+
 
 
 function makeMessageSupportBOM(string $nameUsr, string $usr_email, /*string $usr_phone*/)
