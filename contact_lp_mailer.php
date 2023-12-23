@@ -17,7 +17,7 @@ function createMail($sender, $message)
     $mail->isSMTP(); // protocol that will be used for sending
     $mail->Host = 'smtp.gmail.com'; // Set SMTP server
     $mail->SMTPAuth = true;
-    $mail->Username = 'Businessonmovenoreply@gmail.com'; // SMTP user Gmail account
+    $mail->Username = 'businessonmovenoreply@gmail.com'; // SMTP user Gmail account
     $mail->Password = 'pbin dfqk tvkt cnje';
 
     $mail->SMTPSecure = 'tls';
@@ -25,7 +25,8 @@ function createMail($sender, $message)
 
     // Recipients and sending
     $mail->setFrom($sender, 'Bussines On The Move');
-    $mail->addReplyTo('info@businessonmove.com', 'Reply Information');
+    // $mail->addAddress('lavalleies9024@gmail.com', 'Troll'); // Receiver Email, name is optional
+    $mail->addReplyTo('businessonmovenoreply@gmail.com', 'Reply Information');
 
     // Attachments  
 
@@ -34,24 +35,10 @@ function createMail($sender, $message)
     // Content
     $mail->isHTML(true);
     $mail->Subject = 'Customer Support';
-    #$mail->Body = $message;
-
-    $mail->Body = `<div style="width:500px; min-height:400px; margin:0 auto; background-color:#112724; color:white; font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif; padding:40px">
-    <img height="32" src="https://cdn.discordapp.com/attachments/695395214264762433/882325678685556756/g.png" alt="GeoBox">
-        <div style="text-align:center; margin-top: 20px;">
-        <div style="font-weight:bold; font-size:24px; margin-bottom: 10px; margin-top: 50px;">`+ "Hola " + usuariosParaEnviar[cantidad].NombreUsuario + `</div>
-            <div style="font-size:20px;">Hay nuevos cambios en el Campo: `+ campo.NombreCampo + `</div>
-            <div style="font-size:20px;">`+ newMessage + `</div>
-            <button style="background-color: #2a9d8f; color: #f2f2f2; padding: 10px 50px; border: none; font-weight: bold; font-size: 20px; text-decoration: none; font-weight: bold; border-radius: 5px; cursor: pointer; word-break: break-word; margin-top: 60px;">
-                Ver en GeoBox
-            </button>
-        </div>
-    </div>`
+    $mail->Body = $message;
 
     return $mail;
 }
-
-
 
 function makeMessageUser(string $nameUsr)
 {
@@ -70,14 +57,37 @@ function makeMessageUser(string $nameUsr)
 }
 
 
-function makeMessageSupportBOM(string $nameUsr, string $usr_email, string $usr_phone)
+function makeMessageSupportBOM(string $nameUsr, string $usr_email, /*string $usr_phone*/)
 {
     $message = "This user $nameUsr wants to contact us through the website. Here are their details:
 
-    Phone: $usr_phone
     Email: $usr_email";
+    
     return $message;
 }
+
+
+
+/*
+function makeMessageSupportBOM(string $nameUsr, string $usr_email, string $usr_phone)
+{
+    $message = `<div style="width:500px; min-height:400px; margin:0 auto; background-color:#112724; color:white; font-family:Roboto,RobotoDraft,Helvetica,Arial,sans-serif; padding:40px">
+    <img height="32" src="https://cdn.discordapp.com/attachments/695395214264762433/882325678685556756/g.png" alt="GeoBox">
+        <div style="text-align:center; margin-top: 20px;">
+        <div style="font-weight:bold; font-size:24px; margin-bottom: 10px; margin-top: 50px;">`+ "Hola " +  + `</div>
+            <div style="font-size:20px;">Hay nuevos cambios en el Campo: `+ + `</div>
+            <div style="font-size:20px;">`+ + `</div>
+            <button style="background-color: #2a9d8f; color: #f2f2f2; padding: 10px 50px; border: none; font-weight: bold; font-size: 20px; text-decoration: none; font-weight: bold; border-radius: 5px; cursor: pointer; word-break: break-word; margin-top: 60px;">
+                Ver en GeoBox
+            </button>
+        </div>
+    </div>`;
+    return $message;
+}
+*/
+
+
+
 
 
 function sendEmail($mail, $addressee)
@@ -94,14 +104,17 @@ function sendEmail($mail, $addressee)
 //take data
 $fullname = $_POST['fullname'];
 $usr_email = $_POST['email'];
-$usr_phone = $_POST['phone'];
 
-$contactEmail = createMail("Businessonmovenoreply@gmail.com", makeMessageUser($fullname));
+
+$contactEmailUser = createMail('businessonmovenoreply@gmail.com', makeMessageUser($fullname));
+$contactEmailSupportBOM = createMail('businessonmovenoreply@gmail.com', makeMessageSupportBOM($fullname,$usr_email));
+
 
 if (filter_var($usr_email, FILTER_VALIDATE_EMAIL)) {
 
-    sendEmail($contactEmail, $usr_email);
-
+    sendEmail($contactEmailUser, $usr_email);
+    sendEmail($contactEmailSupportBOM, 'info@business.com');
+    
     exit();
 } else {
     echo "La dirección de correo no es válida.";
