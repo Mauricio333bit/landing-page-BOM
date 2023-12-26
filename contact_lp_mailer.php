@@ -24,7 +24,7 @@ function createMail($sender, $message)
     $mail->Port = 587;
 
     // Recipients and sending
-    $mail->setFrom($sender, 'Bussines On The Move');
+    $mail->setFrom($sender, 'Business On The Move');
     // $mail->addAddress('lavalleies9024@gmail.com', 'Troll'); // Receiver Email, name is optional
     $mail->addReplyTo('businessonmovenoreply@gmail.com', 'Reply Information');
 
@@ -42,9 +42,7 @@ function createMail($sender, $message)
 
 /*function makeMessageUser(string $nameUsr)
 {
-    $message = "This user $nameUsr was contact us
-
-  Thank you for contacting Business On Move. We value your time and appreciate your interest in our services. 
+    $message = "Thank you for contacting Business On Move. We value your time and appreciate your interest in our services. 
   Within the next few hours, one of our representatives will discuss your needs in depth to provide the necessary advice on our products and services. 
   
   Thank you for your interest for us!
