@@ -751,6 +751,14 @@
                     name="email"
                   />
                 </div>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    class="form-control my-3"
+                    placeholder="Phone"
+                    name="phone"
+                  />
+                </div>
 
                 <button
                   type="submit"
@@ -836,9 +844,10 @@
       function validateForm() {
         var fullname = document.forms["contactForm"]["fullname"].value;
         var email = document.forms["contactForm"]["email"].value;
+        var phone = document.forms["contactForm"]["phone"].value;
 
         // Validate if the fields are empty
-        if (fullname === "" || email === "") {
+        if (fullname === "" || email === "" || phone === "") {
           alert("Please fill out all the fields.");
           return false;
         }
