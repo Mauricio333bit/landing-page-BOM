@@ -103,7 +103,7 @@ $contactEmailSupportBOM = createMail('businessonmovenoreply@gmail.com', makeMess
 if (filter_var($usr_email, FILTER_VALIDATE_EMAIL)) {
 
     sendEmail($contactEmailUser, $usr_email);
-    sendEmail($contactEmailSupportBOM, $usr_email/*'info@business.com'*/);
+    sendEmail($contactEmailSupportBOM, 'info@business.com');
 
     exit();
 } else {
