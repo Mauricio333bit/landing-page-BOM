@@ -180,3 +180,21 @@ footer {
 .nav-item:hover::after {
   width: 100%;
 }
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 999; /* Ajusta el valor de z-index según sea necesario para asegurarte de que el icono esté por encima de otros elementos */
+    transition: all 0.3s ease; /* Agrega una transición suave al movimiento del icono */
+}
+
+
+@media only screen and (max-width: 767px) {
+    #whatsapp-icon {
+        position: relative; /* Fija la posición del icono en dispositivos móviles */
+        top: 10px; /* Ajusta la distancia vertical del icono con respecto a la parte superior de la pantalla */
+        right: 50%; /* Coloca el icono a mitad del ancho de la pantalla */
+        transform: translateX(50%); /* Centra el icono horizontalmente */
+    }
+}
