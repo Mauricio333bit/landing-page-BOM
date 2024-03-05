@@ -143,6 +143,65 @@
               </p>
             </div>
 
+            <div class="container">
+              <div class="d-flex flex-column text-center about-seccion">
+                <h2>OUR TEAM</h2>
+                <div class="about-me about-seccion">
+                  <div class="d-flex flex-row justify-content-center flex-wrap">                
+                    <div class="d-flex flex-column align-items-center mx-3 my-3">  
+                      <img src="./img/Juan.png" alt="Foto de perfil 1" class="rounded-circle-custom mb-4 flex-wrap">
+                      <h5>Juan Cruz Rios</h5>
+                      <p>Visionary CEO of Business on Move.</p>
+                      <p id="juan-info" class="more-text" style="display: none;">He is a multifaceted individual with a rich background in technology, business management, and entrepreneurship. Born in San Nicolás de los Arroyos, Argentina, Juan's early passions for music and computers laid the foundation for his remarkable journey.
+                        After completing his studies in Professional Informatics at the Fray Luis Beltrán Institute in his hometown, Juan pursued a Bachelor's degree in Networks and Telecommunications at UTNFRS (National Technological University - Rosario Branch). His academic prowess and technical expertise set the stage for a successful career in the technology sector.
+                        Juan's professional journey led him through esteemed organizations such as Ternium Siderar, a subsidiary of the Techint Group, and Editorial San Pablo. However, it was during his tenure as the General Manager of Clinica Privada Santa Isabel in Buenos Aires that the seeds of entrepreneurship were sown.
+                        In 2019, Juan relocated to Los Angeles, California, where his vision for Business on Move began to take shape. Over the course of three years, Juan meticulously nurtured and developed his brainchild, culminating in the official launch of Business on Move in 2022.
+                        Under Juan's dynamic leadership, Business on Move has emerged as a trusted partner for businesses across California, offering comprehensive accounting services, expert advice on new technologies and software solutions tailored to each client's needs, tax consultancy, property rental management for homeowners, and web design and social media services for business growth.
+                        Today, Business on Move stands as a testament to Juan Cruz Ríos's entrepreneurial spirit, strategic foresight, and unwavering commitment to excellence. With a portfolio boasting connections with over 20 companies throughout California, Juan continues to expand the company's reach and impact, shaping the future of business management and technology integration.</p>
+                      <button onclick="toggleMoreText('juan-info', this)" class="btn btn-primary">Show More</button>
+                      </div>
+                      <script>
+                        function toggleMoreText(id, button) {
+                            var moreText = document.getElementById(id);
+                            if (moreText.style.display === "none" || moreText.style.display === "") {
+                                moreText.style.display = "block";
+                                button.textContent = "Show Less";
+                            } else {
+                                moreText.style.display = "none";
+                                button.textContent = "Show More";
+                            }
+                        }
+                      </script>
+                    </div>
+                    <div class="d-flex flex-column align-items-center mx-3 my-3">  
+                      <img src="./img/Vanesa.png" alt="Foto de perfil 1" class="rounded-circle-custom mb-4 flex-wrap">
+                      <h5>Vanesa Carolina Sturba</h5>
+                      <p>Account Payable of Business on Move.</p>
+                      <p id="vanesa-info" class="more-text" style="display: none;">Vanesa Carolina Sturba, originally from Buenos Aires, Argentina, pursued her passion for accounting by studying at the University of Buenos Aires. With a solid foundation in accounting principles, she embarked on a remarkable career journey.
+                        For two decades, Vanesa served as an Account Manager at the Central Headquarters of the Argentine Federal Police. Her role involved overseeing financial accounts and managing various aspects of financial operations. Her dedication and expertise in managing accounts earned her respect and recognition within the organization.
+                        In 2022, Vanesa made a life-changing decision to relocate to Los Angeles, California, with her husband and daughter. This marked a new chapter in her career as she joined the team at Business on Move, where she currently leads the Accounts Payable Department.
+                        Vanesa's cheerful demeanor and unwavering dedication to her work make her an invaluable asset to Business on Move. Her meticulous attention to detail and commitment to excellence ensure that all financial transactions are handled with precision and efficiency.
+                        With her wealth of experience and expertise in account management, Vanesa Carolina Sturba continues to make significant contributions to the success and growth of Business on Move. Her presence and contributions are truly cherished by the entire team.</p>
+                      <button onclick="toggleMoreText('vanesa-info', this)" class="btn btn-primary">Show More</button>
+                      </div>
+                      <script>
+                        function toggleMoreText(id, button) {
+                            var moreText = document.getElementById(id);
+                            if (moreText.style.display === "none" || moreText.style.display === "") {
+                                moreText.style.display = "block";
+                                button.textContent = "Show Less";
+                            } else {
+                                moreText.style.display = "none";
+                                button.textContent = "Show More";
+                            }
+                        }
+                      </script>
+                    </div> 
+                  </div>
+                </div>
+              </div> 
+            </div>
+
             <!-- About Stats  -->
             <div
               class="stats d-flex justify-content-around text-center flex-wrap"
